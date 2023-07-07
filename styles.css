@@ -1,0 +1,78 @@
+body {
+    font-family: "Boogaloo", cursive;
+    background-color: #BCE4F9; /* Pale Blue */
+    margin: 0;
+    padding: 2%;
+  }
+
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    border: 10px double #FFCA3A; /* Yellow */
+  }
+
+  #game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 135px; /* Increased by 15% */
+    height: 135px; /* Increased by 15% */
+    background-color: #FF585D; /* Red */
+    border: 1px solid #222;
+    border-radius: 7px;
+    margin: 5px;
+    text-align: center;
+    overflow: hidden; /* Prevent text overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Adjust font size as needed */
+    cursor: pointer;
+    color: #FFF; /* White */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .score {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Dark Gray */
+    text-align: center;
+  }
+
+  .reset-button {
+    font-family: "Boogaloo", cursive;
+    font-size: 20px;
+    background-color: #FFCA3A; /* Yellow */
+    color: #FFF; /* White */
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0; /* Adjust top margin */
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .reset-button:hover {
+    background-color: #FDD84C; /* Light Yellow */
+  }
+
+  #corner-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 500px;
+  }
+
+
+ 
