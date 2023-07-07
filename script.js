@@ -1,6 +1,6 @@
 // Array to hold the card values
 //testing with alphabetical, will change to HTML tags
-const cardValues = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F'];
+const cardValues = ['html', 'html', 'body', 'body', 'p', 'p', 'a', 'a', 'section', 'section', 'article', 'article'];
 
 // Shuffle the card values - calling the shuffle function and passing in the cardValues array
 const shuffledCardValues = shuffle(cardValues);

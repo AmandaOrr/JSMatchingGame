@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 100vh;
     border: 10px double #FFCA3A; /* Yellow */
   }
 
@@ -38,6 +38,7 @@ body {
     color: #FFF; /* White */
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
+  
 
   .score {
     font-size: 28px;
