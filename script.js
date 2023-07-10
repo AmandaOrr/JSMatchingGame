@@ -1,27 +1,3 @@
-const timerElement = document.getElementById('timer');
-let timeLeft = 60;
-let timerId = null;
-
-// Start the timer
-function startTimer() {
-  timerId = setInterval(() => {
-    timeLeft--;
-    timerElement.textContent = `Time Left: ${timeLeft}`;
-    if (timeLeft === 0) {
-      endGame();
-      timerElement.textContent = 'Time is up!';
-    }
-  }, 1000);
-}
-
-// Reset the timer
-function resetTimer() {
-  clearInterval(timerId);
-  timeLeft = 60;
-  timerElement.textContent = `Time Left: ${timeLeft}`;
-}
-
-
 
 // Array to hold the card values
 //testing with alphabetical, will change to HTML tags
