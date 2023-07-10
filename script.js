@@ -146,7 +146,7 @@ function resetGame() {
   }
 
   const messageElement = document.getElementById('message');
-  messageElement.textContent = '';
+  messageElement.textContent = 'Match the common types of HTML tags by flipping the cards';
 }
 
 // Function to end the game
