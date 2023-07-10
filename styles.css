@@ -3,6 +3,8 @@ body {
     background-color: #BCE4F9; /* Pale Blue */
     margin: 0;
     padding: 2%;
+    font-size: 1.5rem;
+    color: #29335C;
   }
 
   #game-container {
@@ -10,8 +12,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     border: 10px double #FFCA3A; /* Yellow */
+    border-radius: 20px;
   }
 
   #game-board {
@@ -41,7 +44,7 @@ body {
   
 
   .score {
-    font-size: 28px;
+    font-size: 32px;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #333; /* Dark Gray */
@@ -50,7 +53,7 @@ body {
 
   .reset-button {
     font-family: "Boogaloo", cursive;
-    font-size: 20px;
+    font-size: 28px;
     background-color: #FFCA3A; /* Yellow */
     color: #FFF; /* White */
     border: none;
@@ -73,7 +76,15 @@ body {
     right: 20px;
     z-index: 999;
     width: 500px;
+    max-width: 30%;
   }
 
+
+  .message {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
 
  

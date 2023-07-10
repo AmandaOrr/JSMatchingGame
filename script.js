@@ -1,3 +1,28 @@
+const timerElement = document.getElementById('timer');
+let timeLeft = 60;
+let timerId = null;
+
+// Start the timer
+function startTimer() {
+  timerId = setInterval(() => {
+    timeLeft--;
+    timerElement.textContent = `Time Left: ${timeLeft}`;
+    if (timeLeft === 0) {
+      endGame();
+      timerElement.textContent = 'Time is up!';
+    }
+  }, 1000);
+}
+
+// Reset the timer
+function resetTimer() {
+  clearInterval(timerId);
+  timeLeft = 60;
+  timerElement.textContent = `Time Left: ${timeLeft}`;
+}
+
+
+
 // Array to hold the card values
 //testing with alphabetical, will change to HTML tags
 const cardValues = ['html', 'html', 'body', 'body', 'p', 'p', 'a', 'a', 'section', 'section', 'article', 'article'];
@@ -7,7 +32,7 @@ const shuffledCardValues = shuffle(cardValues);
 
 // Create a game board and populate it with cards
 const gameBoard = document.getElementById('game-board');
-const rowSize = 4;
+const rowSize = 3;
 let row = document.createElement('div');
 row.className = 'row';
 gameBoard.appendChild(row);
@@ -119,6 +144,9 @@ function resetGame() {
       gameBoard.appendChild(row);
     }
   }
+
+  const messageElement = document.getElementById('message');
+  messageElement.textContent = '';
 }
 
 // Function to end the game
@@ -129,5 +157,8 @@ function endGame() {
     card.removeEventListener('click', flipCard);
   });
 
- 
+  // Display the "You Won!" message
+  const messageElement = document.getElementById('message');
+  messageElement.textContent = 'You Won!';
+
 }
